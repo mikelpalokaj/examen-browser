@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh calc(90vh - 40px);
+    padding: 20px;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+}
+
+#filters {
+    padding: 5px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    margin: 2px 0;
+}
+
+li:hover {
+    background-color: cadetblue;
+}
+
+#pdfViewer {
+    justify-self: center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <h1>Examen browser</h1>
+    <div id='content'>
+        <aside id='filters'>
+            <h3>Vak</h3>
+            <select id='subjectSelection' onchange="selectSubject()">
+                
+            </select>
+            <h3>Level</h3>
+            <input onchange="selectSubject()" id="VWO" type="checkbox" name="VWO" value="Bike"> VWO <br>
+            <input onchange="selectSubject()" id="HAVO" type="checkbox" name="HAVO" value="Car"> HAVO <br>
+            <h3>Beschikbare Examens</h3>
+            <ul id='availableExams'>
+
+            </ul>
+        </aside>
+        <object id='pdfViewer' data="examens/Turks/HA-1008-a-11-1-c.pdf" type="application/pdf" width="80%" height="80%">
+            <p>Alternative text - include a link <a href="examens/Turks/HA-1008-a-11-1-c.pdf">to the PDF!</a></p>
+        </object>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
